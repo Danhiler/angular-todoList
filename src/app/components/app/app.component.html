@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-wrapper">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div class="add-new-task">
+    <input type="text" [value]="newTaskText" (input)="newTaskText = $event.target.value"/>
+    <button (click)="addNewTask(newTaskText)">Add</button>
+  </div>
+  <div class="list-items">
+    <ul>
+      <li *ngFor="let item of items">
+        <app-list-item [listItem]="item"
+                       (removeTask)="removeTask($event)"
+                       (selectTaskToUpdate)="selectTaskToUpdate($event)"
+                       (updateEditedTask)="updateEditedTask($event)"
+                       [isEdited]="item.id===editedTaskId"></app-list-item>
+      </li>
+    </ul>
+  </div>
+  <div class="controllers">
+    <div>{{items | countBy :'done' : false }} items left</div>
+    <button (click)="deleteChecked()">Delete checked</button>
+  </div>
+</div>
+
+

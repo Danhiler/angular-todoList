@@ -1,0 +1,16 @@
+<div class="task-Text" [ngClass]="{'task-complited': listItem.done}">
+<div *ngIf="isEdited; else eddited">
+  <input type="text" [value]="listItem.value" (input)="listItem.value = $event.target.value" (blur)="saveEdited()"/>
+</div>
+<ng-template #eddited >
+  <input type="checkbox" [checked]="listItem.done" (change)="listItem.done = !listItem.done;saveEdited()" />
+  {{listItem.value}}
+</ng-template>
+</div>
+<div class="btn" (click)="editTask()">
+  <fa-icon [icon]="faEdit"></fa-icon>
+</div>
+<div class="btn" (click)="deleteTask()">
+  <fa-icon [icon]="faTrash"></fa-icon>
+</div>
+

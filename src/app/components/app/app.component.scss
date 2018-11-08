@@ -1,0 +1,41 @@
+
+.app-wrapper{
+  width: 330px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+.add-new-task{
+
+}
+.list-items{
+}
+li{
+  list-style: none;
+  border:1px solid red;
+  border-radius: 6px;
+  padding:5px;
+  margin: 5px;
+}
+ul{
+  margin:15px 0;
+  padding: 0;
+}
+.controllers{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  button{
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid orange;
+    cursor: pointer;
+    color: red;
+    padding:5px 10px;
+  };
+}

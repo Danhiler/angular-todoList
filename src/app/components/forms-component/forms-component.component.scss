@@ -1,0 +1,21 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css");
+.form-group.row {
+  text-align: center;
+}
+
+form{
+  padding:20px;
+}
+.error{
+  border: 1px solid red;
+}
+.error_block{
+  background-color: rgba(255, 0, 0, 0.38);
+  border: 1px solid red;
+  text-align: center;
+  display: block;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 0 auto 14px;
+  width: 500px;
+}

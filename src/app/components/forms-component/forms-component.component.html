@@ -1,0 +1,42 @@
+<form [formGroup]="form" (ngSubmit)="submit($e)">
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label">Username</label>
+  <div class="col-10">
+    <input class="form-control" formControlName="username" [ngClass]="{'error': checkValid('username')}" type="text" id="example-text-input" name="username">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-search-input" class="col-2 col-form-label">Password</label>
+  <div class="col-10">
+    <input class="form-control" formControlName="password" type="search" name="password"
+           id="example-search-input" [ngClass]="{'error': checkValid('password')}">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label">Email</label>
+  <div class="col-10">
+    <input class="form-control" type="email" formControlName="email" [ngClass]="{'error': checkValid('email')}" name="email"
+           id="example-email-input">
+  </div>
+</div>
+
+  <input type="submit" value="send"  >
+  <input type="reset" value="reset" >
+</form>
+<div class="error_block" *ngIf="errorMsg.length>0"><div *ngFor="let i of errorMsg">{{i}}</div></div>
+
+
+
+<table class="table">
+  <tr>
+    <th scope="col">username</th>
+    <th scope="col">password</th>
+    <th scope="col">email</th>
+  </tr>
+  <tr *ngFor="let item of lists" scope="row">
+    <td>{{item.username}}</td>
+    <td>{{item.password}}</td>
+    <td>{{item.email}}</td>
+  </tr>
+
+</table>

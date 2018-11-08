@@ -1,0 +1,29 @@
+:host{
+  display: flex;
+  flex-direction: row;
+  min-width: 300px;
+}
+:host(:hover){
+
+}
+.task-Text{
+  flex-grow: 1;
+  text-align: left;
+  font-family: sans-serif;
+  max-width: 80%;
+  overflow-wrap: break-word;
+}
+.btn{
+  flex-basis: 40px;
+  cursor: pointer;
+  color: orange;
+}
+.task-complited{
+  text-decoration: line-through;
+}
+input{
+  border-radius: 25px;
+  border: 1px solid orange;
+  padding: 5px 10px;
+}
+

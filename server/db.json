@@ -1,0 +1,57 @@
+{
+  "todos": [
+    {
+      "value": "task 1",
+      "done": false,
+      "id": "1"
+    },
+    {
+      "value": "Ravid0",
+      "done": false,
+      "id": "812fbe10-e362-11e8-8969-47de71fbb4e4"
+    },
+    {
+      "value": "fire Ravid",
+      "done": false,
+      "id": "8a0a9690-e362-11e8-8969-47de71fbb4e4"
+    }
+  ],
+  "users": [
+    {
+      "username": "awdawd",
+      "password": "awdawdawd",
+      "email": "awdawdawd",
+      "id": 1
+    },
+    {
+      "username": "sfesf",
+      "password": "seffe",
+      "email": "sefef",
+      "id": 2
+    },
+    {
+      "username": "Ravid0",
+      "password": "rawdawd",
+      "email": "wr@awd.casd",
+      "id": 3
+    },
+    {
+      "username": "Ravid0",
+      "password": "awdawd",
+      "email": "sefsef@awd.awd",
+      "id": 4
+    },
+    {
+      "username": "Ravid0",
+      "password": "awddawd",
+      "email": "aweawe@awd.caw",
+      "id": 5
+    },
+    {
+      "username": "Ravid0",
+      "password": "awdawdawd",
+      "email": "awd@awd.awc",
+      "id": 6
+    }
+  ]
+}
